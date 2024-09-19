@@ -1,10 +1,9 @@
-import InputContainer from "../components/InputContainer";
+import Navbar from "../components/Navbar/style";
 
 function App() {
   return (
     <div className="App">
-      Hello
-      <InputContainer />
+      <Navbar />
     </div>
   );
 }
