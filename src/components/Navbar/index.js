@@ -1,8 +1,14 @@
-import styled from "styled-components"
+import { NavbarContainer } from "./style";
+import InputContainer from "../InputContainer";
 
-export const NavbarContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: 20px 25%;
-  padding: 0 auto;
-`
+export default function Navbar() {
+  return (
+    <NavbarContainer>
+      <h1>
+        REPO <br />
+        WIKI
+      </h1>
+      <InputContainer />
+    </NavbarContainer>
+  );
+}
