@@ -1,5 +1,6 @@
 import React from "react";
 import { RepoItemContainer } from "./style";
+import { TinyButton } from "../Button/style";
 
 export default function ItemRepo({
   repoName,
@@ -11,9 +12,9 @@ export default function ItemRepo({
     <RepoItemContainer>
       <h3>{repoName}</h3>
       <p>{repoAuthor}</p>
-      <a onClick={() => removeAction(index)} className="remove" href="#">
+      <TinyButton onClick={() => removeAction(index)}>
         Remove
-      </a>
+      </TinyButton>
 
       <hr />
     </RepoItemContainer>

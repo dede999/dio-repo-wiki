@@ -24,3 +24,13 @@ export const ButtonContainer = styled.button`
     border-color: hsl(240, 50%, 60%);
   }
 `
+export const TinyButton = styled.button`
+  background-color: #F56565; // red 400
+  margin: 8px 0;
+  padding: 8px;
+  color: antiquewhite;
+  border-radius: 15px;
+  border-color: #FEB2B2; // red 200
+  border-width: 3px;
+  font-weight: 600;
+`
