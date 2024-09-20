@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar/style";
+import Navbar from "../components/Navbar";
 import ItemRepo from "../components/ItemRepo";
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar onChange={setRepos} />
       {repos.map(({name, author}, index) => (
         <ItemRepo repoName={name} repoAuthor={author.name} key={index} />
       ))}
