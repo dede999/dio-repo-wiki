@@ -1,14 +1,21 @@
-import React from 'react';
-import { RepoItemContainer } from './style';
+import React from "react";
+import { RepoItemContainer } from "./style";
 
-export default function ItemRepo({ repoName, repoAuthor }) {
+export default function ItemRepo({
+  repoName,
+  repoAuthor,
+  index,
+  removeAction,
+}) {
   return (
     <RepoItemContainer>
       <h3>{repoName}</h3>
       <p>{repoAuthor}</p>
-      <a className='remove' href='http://google.com'> Remove </a>
+      <a onClick={() => removeAction(index)} className="remove" href="#">
+        Remove
+      </a>
 
       <hr />
     </RepoItemContainer>
   );
-};
+}
